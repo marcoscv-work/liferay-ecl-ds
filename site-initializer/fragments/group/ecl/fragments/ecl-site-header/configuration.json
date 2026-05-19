@@ -1,0 +1,12 @@
+{
+    "fieldSets": [
+        {
+            "label": "Site header",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show language switcher", "name": "showLang",   "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show search field",      "name": "showSearch", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show login link",        "name": "showLogin",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

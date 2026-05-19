@@ -1,0 +1,11 @@
+[#assign variant = configuration.variant!'info' /]
+[#assign cls = 'ecl-tag ecl-tag--' + variant /]
+
+<span class="${cls}">
+  <span data-lfr-editable-id="tag-label" data-lfr-editable-type="text">Policy</span>
+  [#if configuration.removable]
+    <button type="button" class="ecl-tag__remove" aria-label="Remove tag">
+      <img class="icon" src="[resources:icon-close.svg]" alt="" aria-hidden="true"/>
+    </button>
+  [/#if]
+</span>

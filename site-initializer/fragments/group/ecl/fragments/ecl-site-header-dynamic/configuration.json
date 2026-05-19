@@ -1,0 +1,12 @@
+{
+    "fieldSets": [
+        {
+            "label": "Dynamic site header",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show language link",            "name": "showLang",   "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show Liferay search-bar widget", "name": "showSearch", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show sign-in / sign-out",        "name": "showSignIn", "type": "checkbox"}
+            ]
+        }
+    ]
+}

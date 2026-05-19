@@ -1,0 +1,6 @@
+Bundle-Name: ECL Site Initializer
+Bundle-SymbolicName: com.ecl.site.initializer
+Bundle-Version: 1.0.0
+Liferay-Site-Initializer-Name: ECL Design System
+Provide-Capability: liferay.site.initializer
+Web-ContextPath: /site-initializer-ecl

@@ -1,0 +1,10 @@
+<div class="ecl-form-group">
+  <label class="ecl-form-label" for="ecl-textarea">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Your message</span>
+    [#if configuration.required]<span class="ecl-form-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHelp]
+    <p class="ecl-form-help" data-lfr-editable-id="help" data-lfr-editable-type="text">Please share any details that will help us respond.</p>
+  [/#if]
+  <textarea id="ecl-textarea" class="ecl-form-textarea" rows="5" [#if configuration.required]required[/#if]></textarea>
+</div>

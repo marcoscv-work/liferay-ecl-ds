@@ -1,0 +1,22 @@
+.ecl-blockquote {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--ecl-yellow, #FFD617);
+  background-color: var(--ecl-grey-5, #F5F5F5);
+}
+.ecl-blockquote__text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--ecl-grey-100, #404040);
+  margin: 0;
+  font-style: italic;
+  quotes: "“" "”" "‘" "’";
+}
+.ecl-blockquote__cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--ecl-grey-75, #707070);
+}
+.ecl-blockquote__author { font-weight: 700; }
+.ecl-blockquote__source { margin-left: 0.25rem; }

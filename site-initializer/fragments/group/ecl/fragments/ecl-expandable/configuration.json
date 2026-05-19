@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Expandable",
+            "fields": [
+                {"defaultValue": "false", "label": "Open by default", "name": "open", "type": "checkbox"}
+            ]
+        }
+    ]
+}

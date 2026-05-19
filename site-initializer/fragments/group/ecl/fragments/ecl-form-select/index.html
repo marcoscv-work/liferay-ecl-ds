@@ -1,0 +1,23 @@
+<div class="ecl-form-group">
+  <label class="ecl-form-label" for="ecl-select">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Country of residence</span>
+    [#if configuration.required]<span class="ecl-form-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHelp]
+    <p class="ecl-form-help" data-lfr-editable-id="help" data-lfr-editable-type="text">Select the EU member state where you currently live.</p>
+  [/#if]
+  <div class="ecl-form-select-wrap">
+    <select id="ecl-select" class="ecl-form-select" [#if configuration.required]required[/#if]>
+      <option value="">Select an option</option>
+      <option value="be">Belgium</option>
+      <option value="de">Germany</option>
+      <option value="es">Spain</option>
+      <option value="fr">France</option>
+      <option value="it">Italy</option>
+      <option value="nl">Netherlands</option>
+      <option value="pl">Poland</option>
+      <option value="pt">Portugal</option>
+      <option value="se">Sweden</option>
+    </select>
+  </div>
+</div>

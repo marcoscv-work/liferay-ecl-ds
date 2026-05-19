@@ -1,0 +1,11 @@
+.ecl-page-header { padding-block: 2.5rem 1rem; }
+.ecl-page-header__meta {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--ecl-blue, #004494);
+  margin: 0 0 0.5rem;
+}
+.ecl-page-header__title { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); margin: 0 0 1rem; }
+.ecl-page-header__intro { max-width: 42rem; margin: 0; }

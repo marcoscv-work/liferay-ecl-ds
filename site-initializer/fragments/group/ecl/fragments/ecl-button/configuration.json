@@ -1,0 +1,28 @@
+{
+    "fieldSets": [
+        {
+            "label": "Button",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "primary",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "primary",   "label": "Primary (.ecl-button--primary)"},
+                            {"value": "secondary", "label": "Secondary (.ecl-button--secondary)"},
+                            {"value": "tertiary",  "label": "Tertiary (.ecl-button--tertiary)"},
+                            {"value": "ghost",     "label": "Ghost (.ecl-button--ghost)"},
+                            {"value": "call",      "label": "Call to action (.ecl-button--call)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "false", "label": "Full width",      "name": "wide",      "type": "checkbox"},
+                {"defaultValue": "false", "label": "Disabled",        "name": "disabled",  "type": "checkbox"},
+                {"defaultValue": "false", "label": "Show trailing icon", "name": "showIcon", "type": "checkbox"}
+            ]
+        }
+    ]
+}

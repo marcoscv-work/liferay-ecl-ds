@@ -1,0 +1,229 @@
+{
+    "settings": {"masterPage": {"key": "main"}},
+    "pageElement": {
+        "type": "Root",
+        "pageElements": [
+            {
+                "type": "Fragment",
+                "definition": {
+                    "fragment": {"key": "ecl-page-banner"},
+                    "fragmentConfig": {"variant": "image", "showEyebrow": true, "showDesc": true, "showCta": true, "showCta2": true},
+                    "fragmentFields": [
+                        {"value": {"text": {"value_i18n": {"en_US": "European Commission"}}, "fragmentLink": {}}},
+                        {"value": {"text": {"value_i18n": {"en_US": "A Europe fit for the digital age"}}, "fragmentLink": {}}},
+                        {"value": {"text": {"value_i18n": {"en_US": "Empowering people with a new generation of technologies. Building the EU's digital future together."}}, "fragmentLink": {}}}
+                    ],
+                    "indexed": true
+                }
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-lg"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-section-heading"},
+                            "fragmentConfig": {"level": "h2", "showDesc": true, "centered": false},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Priorities 2024–2029"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "The Commission's headline priorities for the next five years."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Row",
+                        "definition": {
+                            "gutters": true,
+                            "indexed": true,
+                            "modulesPerRow": 3,
+                            "numberOfColumns": 3,
+                            "reverseOrder": false,
+                            "rowViewports": [
+                                {"rowViewportDefinition": {}},
+                                {"rowViewportDefinition": {}},
+                                {"rowViewportDefinition": {}}
+                            ],
+                            "verticalAlignment": "top"
+                        },
+                        "pageElements": [
+                            {
+                                "type": "Column",
+                                "definition": {
+                                    "columnViewports": [
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}}
+                                    ],
+                                    "size": 4
+                                },
+                                "pageElements": [
+                                    {
+                                        "type": "Fragment",
+                                        "definition": {
+                                            "fragment": {"key": "ecl-card"},
+                                            "fragmentConfig": {"variant": "highlight", "showImage": true, "showMeta": true, "showHeading": true, "showText": true, "showLink": true},
+                                            "fragmentFields": [
+                                                {"value": {"fragmentImage": {"url": {"value_i18n": {}}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Policy area"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "A Europe fit for the digital age"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Empowering people with a new generation of technologies."}}, "fragmentLink": {}}}
+                                            ],
+                                            "indexed": true
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Column",
+                                "definition": {
+                                    "columnViewports": [
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}}
+                                    ],
+                                    "size": 4
+                                },
+                                "pageElements": [
+                                    {
+                                        "type": "Fragment",
+                                        "definition": {
+                                            "fragment": {"key": "ecl-card"},
+                                            "fragmentConfig": {"variant": "highlight", "showImage": true, "showMeta": true, "showHeading": true, "showText": true, "showLink": true},
+                                            "fragmentFields": [
+                                                {"value": {"fragmentImage": {"url": {"value_i18n": {}}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Policy area"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "European Green Deal"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Striving to be the first climate-neutral continent."}}, "fragmentLink": {}}}
+                                            ],
+                                            "indexed": true
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Column",
+                                "definition": {
+                                    "columnViewports": [
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}},
+                                        {"columnViewportDefinition": {}}
+                                    ],
+                                    "size": 4
+                                },
+                                "pageElements": [
+                                    {
+                                        "type": "Fragment",
+                                        "definition": {
+                                            "fragment": {"key": "ecl-card"},
+                                            "fragmentConfig": {"variant": "highlight", "showImage": true, "showMeta": true, "showHeading": true, "showText": true, "showLink": true},
+                                            "fragmentFields": [
+                                                {"value": {"fragmentImage": {"url": {"value_i18n": {}}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Policy area"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "An economy that works for people"}}, "fragmentLink": {}}},
+                                                {"value": {"text": {"value_i18n": {"en_US": "Working towards a fair, social and prosperous economy."}}, "fragmentLink": {}}}
+                                            ],
+                                            "indexed": true
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-md", "ecl-section--bg-alt"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-section-heading"},
+                            "fragmentConfig": {"level": "h2", "showDesc": true, "centered": false},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Latest news"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Press releases and statements from the European Commission."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-content-block"},
+                            "fragmentConfig": {"showMeta": true, "showDesc": true, "showTag": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "News article · 14 May 2026 · Brussels"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "EU launches new digital initiative"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "The European Commission has launched a new initiative to make digital services more accessible across the Union."}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Digital"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-content-block"},
+                            "fragmentConfig": {"showMeta": true, "showDesc": true, "showTag": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Press release · 12 May 2026 · Strasbourg"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Commission proposes new climate package"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "A comprehensive set of measures to accelerate the green transition."}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Environment"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-content-block"},
+                            "fragmentConfig": {"showMeta": true, "showDesc": true, "showTag": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Statement · 9 May 2026"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Statement on Europe Day"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Marking 75 years since the Schuman Declaration."}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Speech"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-lg", "ecl-section--bg-brand"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-page-banner"},
+                            "fragmentConfig": {"variant": "primary", "showEyebrow": false, "showDesc": true, "showCta": true, "showCta2": false},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": ""}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Subscribe to our newsletter"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Get the latest updates from the European Commission straight to your inbox."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

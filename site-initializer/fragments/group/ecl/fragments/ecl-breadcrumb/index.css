@@ -1,0 +1,20 @@
+/* === preview-workaround: duplicated from theme === */
+.clean-list { list-style: none; margin: 0; padding: 0; }
+/* === end preview-workaround === */
+
+.ecl-breadcrumb { padding-block: 0.75rem; font-size: 0.875rem; }
+.ecl-breadcrumb__list { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; align-items: center; }
+.ecl-breadcrumb__item { display: inline-flex; align-items: center; gap: 0.5rem; }
+.ecl-breadcrumb__item + .ecl-breadcrumb__item::before {
+  content: "›";
+  color: var(--ecl-grey-50, #9F9F9F);
+  font-size: 1rem;
+  line-height: 1;
+}
+.ecl-breadcrumb__item a {
+  color: var(--ecl-blue, #004494);
+  text-decoration: none;
+}
+.ecl-breadcrumb__item a:visited { color: var(--ecl-blue, #004494); }
+.ecl-breadcrumb__item a:hover   { color: var(--ecl-blue-130, #00306E); text-decoration: underline; }
+.ecl-breadcrumb__item--current { color: var(--ecl-grey-75, #707070); }

@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Radio group",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show help text", "name": "showHelp", "type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+.ecl-pill {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 0.125rem 0.625rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  line-height: 1.4;
+}
+.ecl-pill--default { background-color: var(--ecl-grey-10, #EBEBEB); color: var(--ecl-grey-100, #404040); }
+.ecl-pill--success { background-color: var(--color-success-bg, #E6F0E0); color: var(--ecl-success, #467A39); border-color: var(--ecl-success, #467A39); }
+.ecl-pill--warning { background-color: var(--color-warning-bg, #FDEBD3); color: var(--ecl-warning, #F29527); border-color: var(--ecl-warning, #F29527); }
+.ecl-pill--error   { background-color: var(--color-error-bg,   #FCE3E5); color: var(--ecl-error,   #DA2131); border-color: var(--ecl-error,   #DA2131); }
+.ecl-pill--info    { background-color: var(--color-info-bg,    #E3EFFA); color: var(--ecl-info,    #006FB4); border-color: var(--ecl-info,    #006FB4); }

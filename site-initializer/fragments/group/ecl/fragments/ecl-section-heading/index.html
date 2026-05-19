@@ -1,0 +1,14 @@
+[#assign tag = configuration.level!'h2' /]
+[#assign cls = 'ecl-section-heading' /]
+[#if configuration.centered][#assign cls = cls + ' ecl-section-heading--centered' /][/#if]
+
+<div class="${cls}">
+  <${tag} class="ecl-section-heading__title">
+    <span data-lfr-editable-id="title" data-lfr-editable-type="text">A clear section title</span>
+  </${tag}>
+  [#if configuration.showDesc]
+    <p class="ecl-section-heading__description" data-lfr-editable-id="description" data-lfr-editable-type="rich-text">
+      A one-line description that tells the visitor what this section is about.
+    </p>
+  [/#if]
+</div>

@@ -1,0 +1,37 @@
+{
+    "fieldSets": [
+        {
+            "label": "Link",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "default",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "default",       "label": "Default (.ecl-link)"},
+                            {"value": "cta",           "label": "Call to action (.ecl-link--cta)"},
+                            {"value": "standalone",    "label": "Standalone (.ecl-link--standalone)"}
+                        ]
+                    }
+                },
+                {
+                    "dataType": "string",
+                    "defaultValue": "none",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "none",     "label": "None"},
+                            {"value": "arrow",    "label": "Arrow (after)"},
+                            {"value": "external", "label": "External link (after)"}
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

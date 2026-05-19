@@ -1,0 +1,29 @@
+{
+    "fieldSets": [
+        {
+            "label": "Card",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "default",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "default",   "label": "Default"},
+                            {"value": "news",      "label": "News (.ecl-card--news)"},
+                            {"value": "event",     "label": "Event (.ecl-card--event)"},
+                            {"value": "highlight", "label": "Highlighted (.ecl-card--highlight)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true",  "label": "Show image",     "name": "showImage",   "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show meta line", "name": "showMeta",    "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show heading",   "name": "showHeading", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show text",      "name": "showText",    "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show link",      "name": "showLink",    "type": "checkbox"}
+            ]
+        }
+    ]
+}

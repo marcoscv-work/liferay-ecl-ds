@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Blockquote",
+            "fields": [
+                {"defaultValue": "true", "label": "Show citation", "name": "showCite", "type": "checkbox"}
+            ]
+        }
+    ]
+}

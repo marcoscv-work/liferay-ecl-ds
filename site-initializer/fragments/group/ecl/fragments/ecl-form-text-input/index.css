@@ -1,0 +1,29 @@
+.ecl-form-group { margin-block: 1rem; }
+.ecl-form-label { display: block; font-weight: 700; margin-bottom: 0.375rem; color: var(--ecl-grey-100, #404040); }
+.ecl-form-label__required { color: var(--ecl-error, #DA2131); }
+.ecl-form-help { margin: 0 0 0.5rem; font-size: 0.875rem; color: var(--ecl-grey-75, #707070); }
+.ecl-form-input {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ecl-grey-75, #707070);
+  border-radius: var(--ecl-radius, 2px);
+  background-color: var(--ecl-white, #FFFFFF);
+  color: var(--ecl-grey-100, #404040);
+  box-sizing: border-box;
+}
+.ecl-form-input:hover { border-color: var(--ecl-grey-100, #404040); }
+.ecl-form-error {
+  margin: 0.375rem 0 0;
+  color: var(--ecl-error, #DA2131);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.ecl-form-group--error .ecl-form-input {
+  border-color: var(--ecl-error, #DA2131);
+  border-width: 2px;
+}

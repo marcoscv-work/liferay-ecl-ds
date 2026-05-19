@@ -1,0 +1,33 @@
+/* === preview-workaround: duplicated from theme === */
+.clean-list { list-style: none; margin: 0; padding: 0; }
+/* === end preview-workaround === */
+
+.ecl-styles__section { padding-block: 2rem; border-top: 1px solid var(--ecl-grey-10, #EBEBEB); }
+.ecl-styles__section:first-child { border-top: 0; padding-top: 0; }
+.ecl-styles__heading { margin: 0 0 0.5rem; font-size: 1.75rem; }
+.ecl-styles__subheading { margin: 1.5rem 0 0.75rem; font-size: 1.125rem; }
+.ecl-styles__text { margin: 0 0 1.5rem; max-width: 42rem; color: var(--ecl-grey-100, #404040); }
+
+.ecl-styles__swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+.ecl-styles__swatch { display: flex; align-items: center; gap: 0.625rem; background: var(--ecl-grey-5, #F5F5F5); padding: 0.5rem 0.75rem; border-radius: 2px; }
+.ecl-styles__chip { width: 36px; height: 36px; border-radius: 2px; display: inline-block; flex-shrink: 0; }
+.ecl-styles__chip--border { box-shadow: inset 0 0 0 1px var(--ecl-grey-25, #CFCFCF); }
+.ecl-styles__chip-label { font-size: 0.8125rem; color: var(--ecl-grey-100, #404040); }
+.ecl-styles__chip-label code { color: var(--ecl-grey-75, #707070); font-size: 0.8125rem; }
+
+.ecl-styles__typo { display: grid; gap: 0.5rem; }
+.ecl-styles__typo-row { display: grid; grid-template-columns: minmax(160px, 200px) 1fr; gap: 1rem; align-items: baseline; margin: 0; padding-block: 0.25rem; border-bottom: 1px dashed var(--ecl-grey-10, #EBEBEB); }
+.ecl-styles__typo-label { color: var(--ecl-grey-75, #707070); font-size: 0.875rem; }
+.ecl-styles__typo-sample { color: var(--ecl-grey-100, #404040); }
+.ecl-styles__typo-sample--xxl  { font-size: 3rem; font-weight: 700; line-height: 1.1; }
+.ecl-styles__typo-sample--xl   { font-size: 2.25rem; font-weight: 700; line-height: 1.15; }
+.ecl-styles__typo-sample--l    { font-size: 1.75rem; font-weight: 700; }
+.ecl-styles__typo-sample--m    { font-size: 1.375rem; font-weight: 700; }
+.ecl-styles__typo-sample--s    { font-size: 1.125rem; font-weight: 700; }
+.ecl-styles__typo-sample--lead { font-size: 1.25rem; }
+.ecl-styles__typo-sample--small{ font-size: 0.875rem; }
+
+.ecl-styles__spacing { display: grid; gap: 0.5rem; }
+.ecl-styles__spacing li { display: grid; grid-template-columns: 160px 1fr; align-items: center; gap: 1rem; }
+.ecl-styles__spacing-label { color: var(--ecl-grey-75, #707070); font-size: 0.875rem; }
+.ecl-styles__spacing-bar { display: block; height: 1rem; background: var(--ecl-blue, #004494); }

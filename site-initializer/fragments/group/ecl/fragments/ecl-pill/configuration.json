@@ -1,0 +1,25 @@
+{
+    "fieldSets": [
+        {
+            "label": "Pill",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "default",
+                    "label": "Style",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "default", "label": "Default"},
+                            {"value": "success", "label": "Success"},
+                            {"value": "warning", "label": "Warning"},
+                            {"value": "error",   "label": "Error"},
+                            {"value": "info",    "label": "Info"}
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

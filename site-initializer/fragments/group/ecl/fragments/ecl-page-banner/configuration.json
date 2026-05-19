@@ -1,0 +1,27 @@
+{
+    "fieldSets": [
+        {
+            "label": "Page banner",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "primary",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "primary",      "label": "Primary (blue background)"},
+                            {"value": "image",        "label": "With image"},
+                            {"value": "highlighted",  "label": "Highlighted (yellow stripe)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true", "label": "Show eyebrow",      "name": "showEyebrow", "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show description",  "name": "showDesc",    "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show primary CTA",  "name": "showCta",     "type": "checkbox"},
+                {"defaultValue": "false", "label": "Show secondary CTA","name": "showCta2",   "type": "checkbox"}
+            ]
+        }
+    ]
+}

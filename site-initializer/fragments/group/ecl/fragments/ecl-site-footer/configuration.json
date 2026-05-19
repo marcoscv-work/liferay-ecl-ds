@@ -1,0 +1,13 @@
+{
+    "fieldSets": [
+        {
+            "label": "Footer",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show site identification column", "name": "showIdent", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show contact column",             "name": "showContact", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show social media column",        "name": "showSocial", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show legal/policies column",      "name": "showLegal", "type": "checkbox"}
+            ]
+        }
+    ]
+}

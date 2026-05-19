@@ -1,0 +1,23 @@
+[#assign type = configuration.type!'info' /]
+[#assign cls = 'ecl-message ecl-message--' + type /]
+[#assign iconRes = 'icon-info.svg' /]
+[#if type == 'success'][#assign iconRes = 'icon-check.svg' /][/#if]
+[#if type == 'warning'][#assign iconRes = 'icon-warning.svg' /][/#if]
+[#if type == 'error']  [#assign iconRes = 'icon-error.svg' /][/#if]
+
+<div class="${cls}" data-ecl-message role="alert">
+  <img class="ecl-message__icon icon" src="[resources:${iconRes}]" alt="" aria-hidden="true"/>
+  <div class="ecl-message__content">
+    [#if configuration.showTitle]
+      <h4 class="ecl-message__title" data-lfr-editable-id="message-title" data-lfr-editable-type="text">Information</h4>
+    [/#if]
+    <p class="ecl-message__text" data-lfr-editable-id="message-text" data-lfr-editable-type="rich-text">
+      The message body explains what happened or what the visitor should know.
+    </p>
+  </div>
+  [#if configuration.dismissable]
+    <button type="button" class="ecl-message__close" aria-label="Close">
+      <img class="icon" src="[resources:icon-close.svg]" alt="" aria-hidden="true"/>
+    </button>
+  [/#if]
+</div>

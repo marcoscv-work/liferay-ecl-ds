@@ -1,0 +1,48 @@
+/* === preview-workaround: duplicated from theme === */
+.clean-list { list-style: none; margin: 0; padding: 0; }
+.visuallyhidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* === end preview-workaround === */
+
+.ecl-pagination { padding-block: 1rem; }
+.ecl-pagination__list { display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center; justify-content: center; }
+
+/* Bump specificity with `a.` so Classic theme's `a:link` rules
+ * (also 0,1,1 specificity) can't quietly override our colours. */
+a.ecl-pagination__link,
+a.ecl-pagination__link:link,
+a.ecl-pagination__link:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #CFCFCF;
+  background-color: #FFFFFF;
+  color: #004494;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  border-radius: 0;
+  box-shadow: none;
+}
+a.ecl-pagination__link:hover {
+  background-color: #E3EFFA;
+  color: #00306E;
+  text-decoration: none;
+  border-color: #004494;
+}
+
+a.ecl-pagination__link.ecl-pagination__link--current,
+a.ecl-pagination__link.ecl-pagination__link--current:link,
+a.ecl-pagination__link.ecl-pagination__link--current:visited,
+a.ecl-pagination__link.ecl-pagination__link--current:hover {
+  background-color: #004494;
+  border-color: #004494;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+a.ecl-pagination__link.ecl-pagination__link--nav { padding-inline: 1rem; }
+
+.ecl-pagination__ellipsis { padding: 0 0.25rem; color: #707070; }

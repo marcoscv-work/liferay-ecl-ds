@@ -1,0 +1,1 @@
+/* Static textarea — no behaviour. */

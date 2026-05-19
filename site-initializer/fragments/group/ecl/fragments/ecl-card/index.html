@@ -1,0 +1,28 @@
+[#assign variant = configuration.variant!'default' /]
+[#assign cls = 'ecl-card ecl-card--' + variant /]
+
+<article class="${cls}">
+  [#if configuration.showImage]
+    <div class="ecl-card__image">
+      <img data-lfr-editable-id="card-image" data-lfr-editable-type="image" src="[resources:illustration-components.svg]" alt=""/>
+    </div>
+  [/#if]
+  <div class="ecl-card__body">
+    [#if configuration.showMeta]
+      <p class="ecl-card__meta" data-lfr-editable-id="card-meta" data-lfr-editable-type="text">News article · 14 May 2026</p>
+    [/#if]
+    [#if configuration.showHeading]
+      <h3 class="ecl-card__heading" data-lfr-editable-id="card-heading" data-lfr-editable-type="text">EU launches new digital initiative</h3>
+    [/#if]
+    [#if configuration.showText]
+      <p class="ecl-card__text" data-lfr-editable-id="card-text" data-lfr-editable-type="rich-text">The European Commission has launched a new initiative to make digital services more accessible across the Union.</p>
+    [/#if]
+    [#if configuration.showLink]
+      <a class="ecl-card__link" href="#" data-lfr-editable-id="card-link" data-lfr-editable-type="link">
+        <span class="visuallyhidden" data-lfr-editable-id="card-link-context" data-lfr-editable-type="text">EU launches new digital initiative</span>
+        <span data-lfr-editable-id="card-link-text" data-lfr-editable-type="text">Read more</span>
+        <img class="icon" src="[resources:icon-arrow-right.svg]" alt="" aria-hidden="true"/>
+      </a>
+    [/#if]
+  </div>
+</article>

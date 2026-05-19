@@ -1,0 +1,73 @@
+<header class="ecl-site-header ecl-site-header--dynamic" data-ecl-site-header role="banner">
+
+  [#if configuration.showLang || configuration.showSignIn]
+    <div class="ecl-site-header__utility-bar">
+      <div class="ecl-l-center ecl-site-header__utility-bar-inner">
+        <ul class="clean-list ecl-site-header__utility" role="list">
+          [#if configuration.showLang]
+            <li>
+              <a class="ecl-site-header__utility-link" href="#" hreflang="en">
+                <span aria-hidden="true">EN</span>
+                <span class="visuallyhidden">English</span>
+              </a>
+            </li>
+          [/#if]
+          [#if configuration.showSignIn]
+            <li>
+              [#if themeDisplay.isSignedIn()]
+                <a class="ecl-site-header__utility-link ecl-site-header__utility-link--icon"
+                   href="${htmlUtil.escape(themeDisplay.getURLSignOut())}"
+                   aria-label="Sign out">
+                  <svg class="ecl-site-header__utility-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                  <span>Sign out</span>
+                </a>
+              [/#if]
+              [#if !themeDisplay.isSignedIn()]
+                <a class="ecl-site-header__utility-link ecl-site-header__utility-link--icon"
+                   href="${htmlUtil.escape(themeDisplay.getURLSignIn())}"
+                   aria-label="Sign in">
+                  <svg class="ecl-site-header__utility-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                  <span>Sign in</span>
+                </a>
+              [/#if]
+            </li>
+          [/#if]
+        </ul>
+      </div>
+    </div>
+  [/#if]
+
+  <div class="ecl-site-header__banner">
+    <div class="ecl-l-center ecl-site-header__banner-inner">
+      <a class="ecl-site-header__logo-link" href="/" aria-label="European Union — Home" data-lfr-editable-id="logo-link" data-lfr-editable-type="link">
+        <img class="ecl-site-header__logo" src="[resources:logo-eu-dark.svg]" alt="European Union" width="172" height="48"/>
+      </a>
+
+      [#if configuration.showSearch]
+        <form class="ecl-site-header__search" role="search" aria-label="Search" action="#">
+          <label for="ecl-search-dyn" class="visuallyhidden">Search this site</label>
+          <input id="ecl-search-dyn" class="ecl-site-header__search-input" type="search" name="q" placeholder="Search this site" autocomplete="off"/>
+          <button type="submit" class="ecl-site-header__search-submit">
+            <svg class="ecl-site-header__search-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="16.65" y1="16.65" x2="21" y2="21"/>
+            </svg>
+            <span class="ecl-site-header__search-label">Search</span>
+          </button>
+        </form>
+      [/#if]
+    </div>
+  </div>
+
+  <nav class="ecl-site-header__nav" aria-label="Main navigation">
+    <div class="ecl-l-center ecl-site-header__nav-inner">
+      <lfr-widget-nav></lfr-widget-nav>
+    </div>
+  </nav>
+</header>

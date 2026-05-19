@@ -1,0 +1,20 @@
+<article class="ecl-content-block">
+  [#if configuration.showMeta]
+    <p class="ecl-content-block__meta" data-lfr-editable-id="meta" data-lfr-editable-type="text">News article · 14 May 2026 · Brussels</p>
+  [/#if]
+  <h3 class="ecl-content-block__title">
+    <a href="#" data-lfr-editable-id="title-link" data-lfr-editable-type="link">
+      <span data-lfr-editable-id="title-text" data-lfr-editable-type="text">A clear, actionable content block title</span>
+    </a>
+  </h3>
+  [#if configuration.showDesc]
+    <p class="ecl-content-block__description" data-lfr-editable-id="description" data-lfr-editable-type="rich-text">
+      A short description that tells the visitor what they will find behind the link, in plain language.
+    </p>
+  [/#if]
+  [#if configuration.showTag]
+    <ul class="clean-list ecl-content-block__tags" role="list">
+      <li><span class="ecl-tag" data-lfr-editable-id="tag" data-lfr-editable-type="text">Policy</span></li>
+    </ul>
+  [/#if]
+</article>

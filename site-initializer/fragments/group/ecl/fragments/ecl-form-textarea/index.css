@@ -1,0 +1,21 @@
+.ecl-form-group { margin-block: 1rem; }
+.ecl-form-label { display: block; font-weight: 700; margin-bottom: 0.375rem; color: var(--ecl-grey-100, #404040); }
+.ecl-form-label__required { color: var(--ecl-error, #DA2131); }
+.ecl-form-help { margin: 0 0 0.5rem; font-size: 0.875rem; color: var(--ecl-grey-75, #707070); }
+.ecl-form-textarea {
+  display: block;
+  width: 100%;
+  max-width: 42rem;
+  min-height: 6rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ecl-grey-75, #707070);
+  border-radius: var(--ecl-radius, 2px);
+  background-color: var(--ecl-white, #FFFFFF);
+  color: var(--ecl-grey-100, #404040);
+  box-sizing: border-box;
+  resize: vertical;
+}
+.ecl-form-textarea:hover { border-color: var(--ecl-grey-100, #404040); }

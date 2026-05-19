@@ -1,0 +1,1 @@
+/* Static card — no behaviour. */

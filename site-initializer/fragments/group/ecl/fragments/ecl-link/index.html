@@ -1,0 +1,14 @@
+[#assign variant = configuration.variant!'default' /]
+[#assign icon = configuration.icon!'none' /]
+[#assign cls = 'ecl-link ecl-link--' + variant /]
+
+<a class="${cls}" href="#" data-lfr-editable-id="link" data-lfr-editable-type="link">
+  <span data-lfr-editable-id="link-label" data-lfr-editable-type="text">Link to a related page</span>
+  [#if icon == 'arrow']
+    <img class="ecl-link__icon icon" src="[resources:icon-arrow-right.svg]" alt="" aria-hidden="true"/>
+  [/#if]
+  [#if icon == 'external']
+    <img class="ecl-link__icon icon" src="[resources:icon-external.svg]" alt="" aria-hidden="true"/>
+    <span class="visuallyhidden">(opens in a new window)</span>
+  [/#if]
+</a>

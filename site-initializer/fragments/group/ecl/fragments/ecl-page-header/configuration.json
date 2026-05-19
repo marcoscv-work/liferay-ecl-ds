@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Page header",
+            "fields": [
+                {"defaultValue": "true", "label": "Show meta line",   "name": "showMeta",  "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show introduction", "name": "showIntro", "type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+# Gradle / Liferay workspace
+.gradle/
+build/
+bundles/
+**/build/
+**/dist/
+
+# Node
+node_modules/
+yarn.lock
+package-lock.json
+
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
+
+# Local scratch — not part of the published design system
+ds-site-initializer-strict/
+references/

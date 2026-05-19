@@ -1,0 +1,24 @@
+[#assign inputType = configuration.inputType!'text' /]
+[#assign cls = 'ecl-form-group' /]
+[#if configuration.showError][#assign cls = cls + ' ecl-form-group--error' /][/#if]
+
+<div class="${cls}">
+  <label class="ecl-form-label" for="ecl-text-input">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">First name</span>
+    [#if configuration.required]<span class="ecl-form-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHelp]
+    <p class="ecl-form-help" data-lfr-editable-id="help" data-lfr-editable-type="text">Enter your given name as it appears on your ID.</p>
+  [/#if]
+  <input
+    id="ecl-text-input"
+    class="ecl-form-input"
+    type="${inputType}"
+    [#if configuration.required]required[/#if]
+  />
+  [#if configuration.showError]
+    <p class="ecl-form-error" role="alert" data-lfr-editable-id="error" data-lfr-editable-type="text">
+      This field is required.
+    </p>
+  [/#if]
+</div>

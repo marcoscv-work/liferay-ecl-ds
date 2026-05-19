@@ -1,0 +1,102 @@
+{
+    "settings": {"masterPage": {"key": "main"}},
+    "pageElement": {
+        "type": "Root",
+        "pageElements": [
+            {
+                "type": "Section",
+                "definition": {
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-breadcrumb"},
+                            "fragmentConfig": {},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Home"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Components"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-page-header"},
+                            "fragmentConfig": {"showMeta": true, "showIntro": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Components"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Every component in the Europa Component Library — buttons, links, cards, forms, navigation and feedback patterns — in one searchable gallery."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-md"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-components-showcase"},
+                            "fragmentConfig": {},
+                            "fragmentFields": [],
+                            "indexed": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-md", "ecl-section--bg-alt"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-section-heading"},
+                            "fragmentConfig": {"level": "h2", "showDesc": true, "centered": false},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Frequently asked questions"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Common questions about working with the Europa Component Library."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-accordion"},
+                            "fragmentConfig": {"exclusive": true},
+                            "fragmentFields": [],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-pagination"},
+                            "fragmentConfig": {},
+                            "fragmentFields": [],
+                            "indexed": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

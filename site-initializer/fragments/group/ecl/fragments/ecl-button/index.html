@@ -1,0 +1,16 @@
+[#assign variant = configuration.variant!'primary' /]
+[#assign cls = 'ecl-button ecl-button--' + variant /]
+[#if configuration.wide][#assign cls = cls + ' ecl-button--wide' /][/#if]
+
+<a
+  class="${cls}"
+  data-lfr-editable-id="btn-link"
+  data-lfr-editable-type="link"
+  href="#"
+  [#if configuration.disabled]aria-disabled="true" tabindex="-1"[/#if]
+>
+  <span class="ecl-button__label" data-lfr-editable-id="btn-label" data-lfr-editable-type="text">Button</span>
+  [#if configuration.showIcon]
+    <img class="ecl-button__icon icon" src="[resources:icon-arrow-right.svg]" alt="" aria-hidden="true"/>
+  [/#if]
+</a>

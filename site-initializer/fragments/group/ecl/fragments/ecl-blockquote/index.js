@@ -1,0 +1,1 @@
+/* Static blockquote — no behaviour. */

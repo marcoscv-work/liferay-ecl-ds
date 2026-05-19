@@ -1,0 +1,11 @@
+// Site Initializer JAR — manifest defined in ../bnd.bnd
+//
+// The JAR is built manually from the workspace root (the workspace's
+// JSTranspilerPlugin expects a `src/` folder this bundle does not have):
+//
+//   jar cfm build-scripts/ecl-site-initializer/build/libs/com.ecl.site.initializer-1.0.0.jar \
+//     /tmp/ecl-manifest.mf \
+//     -C . site-initializer -C . META-INF
+//
+// /tmp/ecl-manifest.mf contains the headers from ../bnd.bnd.
+apply plugin: "java"

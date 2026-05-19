@@ -1,0 +1,1 @@
+/* Static pill — no behaviour. */

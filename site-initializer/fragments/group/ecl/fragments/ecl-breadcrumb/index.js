@@ -1,0 +1,1 @@
+/* Static breadcrumb — no behaviour. */

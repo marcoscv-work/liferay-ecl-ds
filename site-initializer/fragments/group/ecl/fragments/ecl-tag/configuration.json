@@ -1,0 +1,24 @@
+{
+    "fieldSets": [
+        {
+            "label": "Tag",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "info",
+                    "label": "Style",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "info",       "label": "Info (.ecl-tag--info)"},
+                            {"value": "neutral",    "label": "Neutral (.ecl-tag--neutral)"},
+                            {"value": "highlight",  "label": "Highlight (.ecl-tag--highlight)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "false", "label": "Removable (show ×)", "name": "removable", "type": "checkbox"}
+            ]
+        }
+    ]
+}

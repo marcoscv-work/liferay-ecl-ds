@@ -1,0 +1,70 @@
+<header class="ecl-site-header" data-ecl-site-header role="banner">
+
+  [#if configuration.showLang || configuration.showLogin]
+    <div class="ecl-site-header__utility-bar">
+      <div class="ecl-l-center ecl-site-header__utility-bar-inner">
+        <ul class="clean-list ecl-site-header__utility" role="list">
+          [#if configuration.showLang]
+            <li>
+              <a class="ecl-site-header__utility-link" href="#" hreflang="en" data-lfr-editable-id="lang-link" data-lfr-editable-type="link">
+                <span aria-hidden="true">EN</span>
+                <span class="visuallyhidden">English</span>
+              </a>
+            </li>
+          [/#if]
+          [#if configuration.showLogin]
+            <li>
+              <a class="ecl-site-header__utility-link ecl-site-header__utility-link--icon" href="#" data-lfr-editable-id="login-link" data-lfr-editable-type="link">
+                <svg class="ecl-site-header__utility-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span data-lfr-editable-id="login-text" data-lfr-editable-type="text">Log in</span>
+              </a>
+            </li>
+          [/#if]
+        </ul>
+      </div>
+    </div>
+  [/#if]
+
+  <div class="ecl-site-header__banner">
+    <div class="ecl-l-center ecl-site-header__banner-inner">
+      <a class="ecl-site-header__logo-link" href="/" aria-label="European Union — Home" data-lfr-editable-id="logo-link" data-lfr-editable-type="link">
+        <img class="ecl-site-header__logo" src="[resources:logo-eu.svg]" alt="European Union" width="172" height="48"/>
+      </a>
+
+      [#if configuration.showSearch]
+        <form class="ecl-site-header__search" role="search" aria-label="Search" action="#">
+          <label for="ecl-search-input" class="visuallyhidden">Search this site</label>
+          <input id="ecl-search-input" class="ecl-site-header__search-input" type="search" name="q" placeholder="Search this site" autocomplete="off"/>
+          <button type="submit" class="ecl-site-header__search-submit">
+            <svg class="ecl-site-header__search-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="16.65" y1="16.65" x2="21" y2="21"/>
+            </svg>
+            <span class="ecl-site-header__search-label">Search</span>
+          </button>
+        </form>
+      [/#if]
+    </div>
+  </div>
+
+  <nav class="ecl-site-header__nav" aria-label="Main navigation">
+    <div class="ecl-l-center ecl-site-header__nav-inner">
+      <button type="button" class="ecl-site-header__menu-toggle" data-ecl-toggle="menu" aria-controls="ecl-site-nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#004494" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <span>Menu</span>
+      </button>
+      <ul id="ecl-site-nav" class="clean-list ecl-site-header__nav-list" role="list">
+        <li><a href="/home"       data-lfr-editable-id="nav-home"       data-lfr-editable-type="link">Home</a></li>
+        <li><a href="/styles"     data-lfr-editable-id="nav-styles"     data-lfr-editable-type="link">Styles</a></li>
+        <li><a href="/components" data-lfr-editable-id="nav-components" data-lfr-editable-type="link">Components</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

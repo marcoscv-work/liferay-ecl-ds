@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Europe map abstract illustration">
+  <rect width="480" height="360" fill="#E3EFFA"/>
+  <g fill="#004494" opacity="0.85">
+    <path d="M120,80 Q160,60 200,80 T280,80 T360,80 L360,140 Q320,160 280,140 T200,140 T120,140 Z"/>
+    <path d="M140,180 Q180,160 220,180 T300,180 L300,240 Q260,260 220,240 T140,240 Z"/>
+    <circle cx="240" cy="170" r="6"/>
+    <circle cx="180" cy="120" r="4"/>
+    <circle cx="300" cy="120" r="4"/>
+    <circle cx="200" cy="220" r="4"/>
+    <circle cx="270" cy="220" r="4"/>
+  </g>
+  <g fill="#FFD617">
+    <circle cx="240" cy="170" r="3"/>
+    <circle cx="180" cy="120" r="2"/>
+    <circle cx="300" cy="120" r="2"/>
+    <circle cx="200" cy="220" r="2"/>
+    <circle cx="270" cy="220" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<fieldset class="ecl-form-fieldset">
+  <legend class="ecl-form-legend">
+    <span data-lfr-editable-id="legend" data-lfr-editable-type="text">Which topics are you interested in?</span>
+  </legend>
+  [#if configuration.showHelp]
+    <p class="ecl-form-help" data-lfr-editable-id="help" data-lfr-editable-type="text">Select all that apply.</p>
+  [/#if]
+  <div class="ecl-form-options">
+    <label class="ecl-form-check">
+      <input type="checkbox" name="topics" value="env"/>
+      <span class="ecl-form-check__label">Environment</span>
+    </label>
+    <label class="ecl-form-check">
+      <input type="checkbox" name="topics" value="dig"/>
+      <span class="ecl-form-check__label">Digital and technology</span>
+    </label>
+    <label class="ecl-form-check">
+      <input type="checkbox" name="topics" value="eco"/>
+      <span class="ecl-form-check__label">Economy and the euro</span>
+    </label>
+    <label class="ecl-form-check">
+      <input type="checkbox" name="topics" value="agr"/>
+      <span class="ecl-form-check__label">Agriculture and rural development</span>
+    </label>
+  </div>
+</fieldset>

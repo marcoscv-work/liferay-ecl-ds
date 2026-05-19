@@ -1,0 +1,1 @@
+/* Static input — no behaviour. */

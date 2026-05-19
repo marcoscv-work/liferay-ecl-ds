@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Accordion",
+            "fields": [
+                {"defaultValue": "true", "label": "Allow only one item open at a time", "name": "exclusive", "type": "checkbox"}
+            ]
+        }
+    ]
+}

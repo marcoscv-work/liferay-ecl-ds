@@ -1,0 +1,26 @@
+{
+    "fieldSets": [
+        {
+            "label": "Message",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "info",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "info",    "label": "Info (.ecl-message--info)"},
+                            {"value": "success", "label": "Success (.ecl-message--success)"},
+                            {"value": "warning", "label": "Warning (.ecl-message--warning)"},
+                            {"value": "error",   "label": "Error (.ecl-message--error)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true",  "label": "Show title",   "name": "showTitle",  "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Dismissable",  "name": "dismissable","type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "fieldSets": [
+        {
+            "label": "Section heading",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "h2",
+                    "label": "Heading level",
+                    "name": "level",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "h2", "label": "H2"},
+                            {"value": "h3", "label": "H3"},
+                            {"value": "h4", "label": "H4"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true", "label": "Show description", "name": "showDesc", "type": "checkbox"},
+                {"defaultValue": "false", "label": "Centered",        "name": "centered", "type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Select",
+            "fields": [
+                {"defaultValue": "true", "label": "Show help text", "name": "showHelp", "type": "checkbox"},
+                {"defaultValue": "false", "label": "Required",      "name": "required", "type": "checkbox"}
+            ]
+        }
+    ]
+}

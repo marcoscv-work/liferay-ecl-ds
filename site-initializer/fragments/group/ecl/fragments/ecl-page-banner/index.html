@@ -1,0 +1,37 @@
+[#assign variant = configuration.variant!'primary' /]
+[#assign cls = 'ecl-page-banner ecl-page-banner--' + variant /]
+
+<section class="${cls}">
+  <div class="ecl-l-center ecl-page-banner__inner">
+    <div class="ecl-page-banner__content">
+      [#if configuration.showEyebrow]
+        <p class="ecl-page-banner__eyebrow" data-lfr-editable-id="eyebrow" data-lfr-editable-type="text">European Commission</p>
+      [/#if]
+      <h1 class="ecl-page-banner__title" data-lfr-editable-id="title" data-lfr-editable-type="text">A Europe fit for the digital age</h1>
+      [#if configuration.showDesc]
+        <p class="ecl-page-banner__description" data-lfr-editable-id="description" data-lfr-editable-type="rich-text">
+          Empowering people with a new generation of technologies. Building the EU's digital future.
+        </p>
+      [/#if]
+      [#if configuration.showCta || configuration.showCta2]
+        <div class="ecl-page-banner__actions">
+          [#if configuration.showCta]
+            <a class="ecl-button ecl-button--primary" href="#" data-lfr-editable-id="cta-link" data-lfr-editable-type="link">
+              <span data-lfr-editable-id="cta-label" data-lfr-editable-type="text">Read more</span>
+            </a>
+          [/#if]
+          [#if configuration.showCta2]
+            <a class="ecl-button ecl-button--ghost" href="#" data-lfr-editable-id="cta2-link" data-lfr-editable-type="link">
+              <span data-lfr-editable-id="cta2-label" data-lfr-editable-type="text">Learn about the EU</span>
+            </a>
+          [/#if]
+        </div>
+      [/#if]
+    </div>
+    [#if variant == 'image']
+      <div class="ecl-page-banner__media">
+        <img data-lfr-editable-id="banner-image" data-lfr-editable-type="image" src="[resources:illustration-hero.svg]" alt=""/>
+      </div>
+    [/#if]
+  </div>
+</section>

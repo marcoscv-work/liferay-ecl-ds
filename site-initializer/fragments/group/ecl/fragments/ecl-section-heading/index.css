@@ -1,0 +1,4 @@
+.ecl-section-heading { margin-block: 1.5rem 1rem; max-width: 42rem; }
+.ecl-section-heading--centered { margin-inline: auto; text-align: center; }
+.ecl-section-heading__title { margin: 0 0 0.5rem; }
+.ecl-section-heading__description { margin: 0; color: var(--ecl-grey-75, #707070); font-size: 1.125rem; }

@@ -1,0 +1,90 @@
+{
+    "frontendTokenCategories": [
+        {
+            "label": "Theme colors",
+            "name": "themeColors",
+            "frontendTokenSets": [
+                {
+                    "label": "Brand",
+                    "name": "brand",
+                    "frontendTokens": [
+                        {"defaultValue": "#004494", "editorType": "ColorPicker", "label": "EU blue",        "mappings": [{"type": "cssVariable", "value": "ecl-blue"}],        "name": "eclBlue",        "type": "String"},
+                        {"defaultValue": "#003776", "editorType": "ColorPicker", "label": "EU blue 125",    "mappings": [{"type": "cssVariable", "value": "ecl-blue-125"}],    "name": "eclBlue125",     "type": "String"},
+                        {"defaultValue": "#00306E", "editorType": "ColorPicker", "label": "EU blue 130",    "mappings": [{"type": "cssVariable", "value": "ecl-blue-130"}],    "name": "eclBlue130",     "type": "String"},
+                        {"defaultValue": "#C2D7F2", "editorType": "ColorPicker", "label": "EU blue 25",     "mappings": [{"type": "cssVariable", "value": "ecl-blue-25"}],     "name": "eclBlue25",      "type": "String"},
+                        {"defaultValue": "#E3EFFA", "editorType": "ColorPicker", "label": "EU blue 10",     "mappings": [{"type": "cssVariable", "value": "ecl-blue-10"}],     "name": "eclBlue10",      "type": "String"},
+                        {"defaultValue": "#FFD617", "editorType": "ColorPicker", "label": "EU yellow",      "mappings": [{"type": "cssVariable", "value": "ecl-yellow"}],      "name": "eclYellow",      "type": "String"},
+                        {"defaultValue": "#F8E08E", "editorType": "ColorPicker", "label": "EU yellow 50",   "mappings": [{"type": "cssVariable", "value": "ecl-yellow-50"}],   "name": "eclYellow50",    "type": "String"}
+                    ]
+                },
+                {
+                    "label": "Neutrals",
+                    "name": "neutrals",
+                    "frontendTokens": [
+                        {"defaultValue": "#FFFFFF", "editorType": "ColorPicker", "label": "White",         "mappings": [{"type": "cssVariable", "value": "ecl-white"}],      "name": "eclWhite",      "type": "String"},
+                        {"defaultValue": "#F5F5F5", "editorType": "ColorPicker", "label": "Grey 5",        "mappings": [{"type": "cssVariable", "value": "ecl-grey-5"}],     "name": "eclGrey5",      "type": "String"},
+                        {"defaultValue": "#EBEBEB", "editorType": "ColorPicker", "label": "Grey 10",       "mappings": [{"type": "cssVariable", "value": "ecl-grey-10"}],    "name": "eclGrey10",     "type": "String"},
+                        {"defaultValue": "#CFCFCF", "editorType": "ColorPicker", "label": "Grey 25",       "mappings": [{"type": "cssVariable", "value": "ecl-grey-25"}],    "name": "eclGrey25",     "type": "String"},
+                        {"defaultValue": "#9F9F9F", "editorType": "ColorPicker", "label": "Grey 50",       "mappings": [{"type": "cssVariable", "value": "ecl-grey-50"}],    "name": "eclGrey50",     "type": "String"},
+                        {"defaultValue": "#707070", "editorType": "ColorPicker", "label": "Grey 75",       "mappings": [{"type": "cssVariable", "value": "ecl-grey-75"}],    "name": "eclGrey75",     "type": "String"},
+                        {"defaultValue": "#404040", "editorType": "ColorPicker", "label": "Grey 100",      "mappings": [{"type": "cssVariable", "value": "ecl-grey-100"}],   "name": "eclGrey100",    "type": "String"},
+                        {"defaultValue": "#000000", "editorType": "ColorPicker", "label": "Black",         "mappings": [{"type": "cssVariable", "value": "ecl-black"}],      "name": "eclBlack",      "type": "String"}
+                    ]
+                },
+                {
+                    "label": "Feedback",
+                    "name": "feedback",
+                    "frontendTokens": [
+                        {"defaultValue": "#467A39", "editorType": "ColorPicker", "label": "Success",       "mappings": [{"type": "cssVariable", "value": "ecl-success"}],     "name": "eclSuccess",    "type": "String"},
+                        {"defaultValue": "#DA2131", "editorType": "ColorPicker", "label": "Error",         "mappings": [{"type": "cssVariable", "value": "ecl-error"}],       "name": "eclError",      "type": "String"},
+                        {"defaultValue": "#F29527", "editorType": "ColorPicker", "label": "Warning",       "mappings": [{"type": "cssVariable", "value": "ecl-warning"}],     "name": "eclWarning",    "type": "String"},
+                        {"defaultValue": "#006FB4", "editorType": "ColorPicker", "label": "Info",          "mappings": [{"type": "cssVariable", "value": "ecl-info"}],        "name": "eclInfo",       "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Typography",
+            "name": "typography",
+            "frontendTokenSets": [
+                {
+                    "label": "Families",
+                    "name": "fontFamily",
+                    "frontendTokens": [
+                        {"defaultValue": "Arial, sans-serif",                          "label": "Font family base", "mappings": [{"type": "cssVariable", "value": "ecl-font-family-base"}], "name": "fontFamilyBase", "type": "String"},
+                        {"defaultValue": "Consolas, 'Courier New', monospace",         "label": "Font family mono", "mappings": [{"type": "cssVariable", "value": "ecl-font-family-mono"}], "name": "fontFamilyMono", "type": "String"}
+                    ]
+                },
+                {
+                    "label": "Sizes (heading scale)",
+                    "name": "fontSizes",
+                    "frontendTokens": [
+                        {"defaultValue": "3rem",     "editorType": "Length", "label": "XXL (h1)",  "mappings": [{"type": "cssVariable", "value": "ecl-font-size-xxl"}], "name": "fontSizeXxl", "type": "String"},
+                        {"defaultValue": "2.25rem",  "editorType": "Length", "label": "XL (h2)",   "mappings": [{"type": "cssVariable", "value": "ecl-font-size-xl"}],  "name": "fontSizeXl",  "type": "String"},
+                        {"defaultValue": "1.75rem",  "editorType": "Length", "label": "L (h3)",    "mappings": [{"type": "cssVariable", "value": "ecl-font-size-l"}],   "name": "fontSizeL",   "type": "String"},
+                        {"defaultValue": "1.375rem", "editorType": "Length", "label": "M (h4)",    "mappings": [{"type": "cssVariable", "value": "ecl-font-size-m"}],   "name": "fontSizeM",   "type": "String"},
+                        {"defaultValue": "1.125rem", "editorType": "Length", "label": "S (h5)",    "mappings": [{"type": "cssVariable", "value": "ecl-font-size-s"}],   "name": "fontSizeS",   "type": "String"},
+                        {"defaultValue": "1rem",     "editorType": "Length", "label": "Body",      "mappings": [{"type": "cssVariable", "value": "ecl-font-size-body"}], "name": "fontSizeBody", "type": "String"},
+                        {"defaultValue": "0.875rem", "editorType": "Length", "label": "Small",     "mappings": [{"type": "cssVariable", "value": "ecl-font-size-small"}], "name": "fontSizeSmall", "type": "String"},
+                        {"defaultValue": "1.25rem",  "editorType": "Length", "label": "Lead",      "mappings": [{"type": "cssVariable", "value": "ecl-font-size-lead"}],  "name": "fontSizeLead", "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Layout",
+            "name": "layout",
+            "frontendTokenSets": [
+                {
+                    "label": "Container",
+                    "name": "container",
+                    "frontendTokens": [
+                        {"defaultValue": "76rem",  "editorType": "Length", "label": "Container max (1216px)", "mappings": [{"type": "cssVariable", "value": "ecl-max-width"}],     "name": "maxWidth",     "type": "String"},
+                        {"defaultValue": "0",      "editorType": "Length", "label": "Button radius",          "mappings": [{"type": "cssVariable", "value": "ecl-radius-button"}], "name": "radiusButton", "type": "String"},
+                        {"defaultValue": "2px",    "editorType": "Length", "label": "Border radius",          "mappings": [{"type": "cssVariable", "value": "ecl-radius"}],        "name": "radius",       "type": "String"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

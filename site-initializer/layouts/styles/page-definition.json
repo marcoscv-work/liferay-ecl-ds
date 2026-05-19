@@ -1,0 +1,62 @@
+{
+    "settings": {"masterPage": {"key": "main"}},
+    "pageElement": {
+        "type": "Root",
+        "pageElements": [
+            {
+                "type": "Section",
+                "definition": {
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-breadcrumb"},
+                            "fragmentConfig": {},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Home"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Styles"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-page-header"},
+                            "fragmentConfig": {"showMeta": true, "showIntro": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Styles"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "The visual foundations of the Europa Component Library — colour, typography and spacing — distilled into a small set of design tokens."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {
+                    "cssClasses": ["ecl-section--py-md"],
+                    "indexed": true,
+                    "layout": {"widthType": "Fixed"}
+                },
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "ecl-styles-showcase"},
+                            "fragmentConfig": {"showColors": true, "showTypo": true, "showSpacing": true},
+                            "fragmentFields": [],
+                            "indexed": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
