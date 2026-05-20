@@ -24,6 +24,3 @@ package-lock.json
 # Local scratch — not part of the published design system
 ds-site-initializer-strict/
 references/
-
-# Sister projects in their own repos
-DSFR/
