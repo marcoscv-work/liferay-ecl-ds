@@ -66,6 +66,22 @@ ecl-ds/
   `logo-eu-dark.svg` (dark text — for white surfaces) and
   `logo-eu-light.svg` (white text — for navy surfaces).
 
+## Screenshots
+
+Full-page captures of the site as created by this site initializer on a Liferay DXP master bundle (October 2026), with the CSS theme client extension applied.
+
+### Home
+
+![home page](docs/screenshots/home.png)
+
+### Styles
+
+![styles page](docs/screenshots/styles.png)
+
+### Components
+
+![components page](docs/screenshots/components.png)
+
 ## Pre-deploy validation
 
 ```bash
